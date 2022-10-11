@@ -1,0 +1,18 @@
+<script>
+    let a = 1
+    let list = ""
+    // 外层循环控制行数
+    for (let rows = 1; rows <= 9; rows++) {
+        // console.log(rows)
+        // 里层循环控制每一层的个数
+        for (let cols = 1; cols <= rows; cols++) {
+            // console.log(cols)
+            let result = cols * a
+            list += a + "x" + cols + "=" + result + " "
+            a++
+        }
+        a = 1
+        list += "\n"
+    }
+    console.log(list)
+</script>
