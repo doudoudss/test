@@ -1,0 +1,23 @@
+<script>
+    let cash = 100
+    let choice = prompt(
+        "请输入您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出"
+    )
+    switch (choice) {
+        case "1":
+            let mon = prompt("请您输入存的钱数")
+            cash = parseInt(mon) + cash
+            alert("您的余额有" + cash + "元")
+            break
+        case "2":
+            let down = prompt("请您想取出的钱数")
+            cash = cash - parseInt(down)
+            alert("您的余额有" + cash + "元")
+            break
+        case "3":
+            alert("您的余额有" + cash + "元")
+            break
+        case "4":
+            break
+    }
+</script>
